@@ -1,0 +1,22 @@
+{
+  "name": "pdf-watermark",
+  "version": "1.0.0",
+  "description": "A node.js api for adding custom first page and watermark to pdf files.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Abouhilal badr <abouhilalbadr@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "multer": "^1.4.3",
+    "node-fetch": "^2.6.1",
+    "pdf-lib": "^1.16.0"
+  }
+  ,
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

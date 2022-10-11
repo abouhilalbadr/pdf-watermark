@@ -1,0 +1,135 @@
+body {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.min-h-body {
+  min-height: calc(100vh - 230px);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+select {
+  appearance: none;
+  background-image: linear-gradient(
+45deg,transparent 50%,#ff5c58 0),linear-gradient(
+135deg,#ff5c58 50%,transparent 0);
+  background-position: calc(100% - 20px) calc(1em + 6px),calc(100% - 15px) calc(1em + 6px);
+  background-size: 5px 5px,5px 5px;
+  background-repeat: no-repeat;
+}
+
+.bg-main {
+  background-color: #ff5c58;
+}
+
+.text-main,
+.mainBtn:hover {
+  color: #ff5c58 !important;
+}
+
+.border-main {
+  border-color: #ff5c58;
+}
+
+
+/* Drop Zone */
+.drop-zone--over {
+  border-style: solid;
+}
+
+.drop-zone__input {
+  display: none;
+}
+
+.drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+  overflow: hidden;
+  background-color: #cccccc;
+  background-size: cover;
+  position: relative;
+}
+
+.drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Disabled Class */
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  color: #4b5563 !important;
+  background-color: transparent !important;
+  border-color: #4b5563 !important;
+}
+
+.disabled:hover {
+  opacity: 0.2;
+  color: #4b5563 !important;
+}
+
+/* Watermark Types */
+.dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #ff5c58;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.5s ease;
+}
+
+.btnType.checked {
+  border-color: #ff5c58;
+  background: #ff5c58;
+}
+.btnType.checked .dot {
+  background: #fff;
+}
+.btnType.checked .dot::before {
+  opacity: 1;
+  transform: scale(1);
+}
+.btnType.checked span {
+  color: #fff;
+}
+
+/* Checkbox */
+
+.del-first :hover input ~ .check {
+  background-color: #ccc;
+}
+.del-first .check:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 8px;
+  top: 4px;
+  width: 8px;
+  height: 14px;
+  border: solid #ff5c58;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.del-first input:checked ~ .check:after {
+  display: block;
+}

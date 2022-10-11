@@ -1,0 +1,28 @@
+<!-- Hero Section -->
+<%- include('./partials/hero.ejs') %>
+<!-- File upload Section -->
+<section class="bg-gray-100 p-4 lg:p-12">
+  <div class="container mx-auto">
+    <div class="lg:p-5">
+      <!-- Include Stepper from partials -->
+      <%- include('./partials/stepper.ejs') %>
+      <div id="currentStep" class="mt-8 p-2 lg:p-4" data-current-step="1">
+        <!-- PDF File -->
+        <%- include('./partials/steps/pdf-file.ejs') %>
+        <!-- Watermark Settings -->
+        <%- include('./partials/steps/watermark.ejs') %>
+        <!-- First page Settings -->
+        <%- include('./partials/steps/first-page.ejs') %>
+        <!-- Result -->
+        <div class="stepper lg:px-12 py-8 hidden" data-step="4">
+          Result
+        </div>
+      </div>
+      <!-- Navigation Buttons -->
+      <div class="flex justify-between p-2 lg:p-4 mt-4">
+        <button id="prevStep" class="px-10 py-2 border border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white transition duration-500 ease-in-out rounded-lg">Previous</button>
+        <button id="nextStep" class="mainBtn px-10 py-2 bg-main hover:bg-transparent border border-main text-white transition duration-500 ease-in-out rounded-lg">Next</button>
+      </div>
+  </div>
+  </div>
+</section>

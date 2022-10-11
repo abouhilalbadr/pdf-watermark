@@ -1,0 +1,14 @@
+<div class="stepper lg:px-12 py-8" data-step="1">
+  <!-- Drag & Drop Area -->
+  <div class="drop-zone flex justify-center items-center h-48 border-2 border-dashed border-gray-400 text-center rounded-lg cursor-pointer">
+    <span class="drop-zone__prompt text-gray-400">Drop file here or click to upload</span>
+    <input type="file" id="pdf-file" class="drop-zone__input" accept="application/pdf">
+  </div>
+  <h2 class="text-4xl text-center my-8">OR</h2>
+  <!-- URL Area -->
+  <div class="w-full">
+    <label class="block mb-2 text-gray-400" for="pdf-url">Paste the web address of the file:</label>
+    <input type="url" id="pdf-url" class="w-full bg-white border border-gray-400 rounded-lg px-4 h-12 focus:outline-none focus:border-gray-600 mt-2" placeholder="https://example.com/your-file.pdf">
+  </div>
+  <p id="pdf-validation" class="hidden mt-8 px-4 py-2 rounded-lg text-sm text-red-400 bg-red-100">Please upload or insert a valid PDF file</p>
+</div>

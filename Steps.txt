@@ -1,0 +1,13 @@
+Text OR Image watermark ===> {
+  Text or (File input OR URL)
+  Opacity
+}
+
+Add OR Edit First page ===> {
+  File input OR URL of the first page
+  Checkbox edit/add first page
+}
+
+Result ===> {
+  Preview PDF AND Download button
+}

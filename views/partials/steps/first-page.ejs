@@ -1,0 +1,33 @@
+<div class="stepper lg:px-12 py-8 hidden" data-step="3">
+  <!-- Add First page to the PDF -->
+  <div class="my-6">
+    <button id="firstpageBtn" class="flex items-center text-main">
+      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+      <span class="ml-2">Change or Delete PDF First page</span>
+    </button>
+    <p class="text-gray-400 text-sm">Your can change or delete the first page of your PDF</p>
+    <div id="firstpageDetails" class="hidden my-4">
+      <label for="delete-firstpage" class="del-first relative block pl-10 my-6 cursor-pointer">
+        Delete the default PDF first page
+        <input id="delete-firstpage" type="checkbox" class="absolute opacity-0 cursor-pointer h-0 w-0">
+        <span class="check absolute top-0 left-0 h-6 w-6 bg-gray-200"></span>
+      </label>
+      <h2 class="text-lg text-gray-400 my-6">Choose your first page image: </h2>
+      <div class="flex flex-col lg:flex-row flex-wrap items-center my-2">
+        <div class="w-full lg:w-2/5 mb-4">
+          <label for="firstpage-img" class="block mb-2 text-gray-400">
+            Image
+          </label>
+          <input type="file" id="firstpage-img">
+        </div>
+        <div class="w-full lg:w-1/5 text-center text-xl">
+          OR
+        </div>
+        <div class="w-full lg:w-2/5">
+          <label class="block mb-2 text-gray-400" for="img-url">Paste the web address of the image:</label>
+          <input type="url" id="firstpage-url" class="w-full bg-white border border-gray-400 rounded-lg px-4 h-12 focus:outline-none focus:border-gray-600 mt-2" placeholder="https://example.com/your-firstpage.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

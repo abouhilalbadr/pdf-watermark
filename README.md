@@ -1,18 +1,19 @@
-# pdf-watermark
+# Easy Watermark
 
 ## Overview
 
 The goal of this API is to add a custom first page and watermark to pdf files.
 
-## Add your watermark
+## Run easy watermark on your localhost
 
-Add in the `server.js` file your watermark URL
+```
+yarn dev
 
 ```
 
-const watermarkPortraitPng = '';
-const watermarkLandscapePng = '';
-const introPortraitPng = '';
-const introLandscapePng = '';
+or
+
+```
+npm run dev
 
 ```

@@ -1,22 +1,27 @@
 {
-  "name": "pdf-watermark",
+  "name": "easy-watermark",
   "version": "1.0.0",
-  "description": "A node.js api for adding custom first page and watermark to pdf files.",
+  "description": "Adding custom first page and watermark to pdf files",
   "main": "index.js",
+  "repository": "https://github.com/abouhilalbadr/pdf-watermark",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "Abouhilal badr <abouhilalbadr@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
+    "cross-fetch": "^3.1.4",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
     "multer": "^1.4.3",
-    "node-fetch": "^2.6.1",
+    "paypal-rest-sdk": "^1.8.1",
     "pdf-lib": "^1.16.0"
-  }
-  ,
+  },
   "devDependencies": {
+    "dotenv": "^10.0.0",
     "nodemon": "^2.0.12"
   }
 }
